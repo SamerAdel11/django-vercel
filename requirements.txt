@@ -6,3 +6,4 @@ django-cors-headers
 dj-database-url
 psycopg2.binary
 sqlparse==0.4.3
+python-decouple
