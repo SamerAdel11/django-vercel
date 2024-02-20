@@ -1,9 +1,18 @@
-django>= 4.0.0, <4.1.0
-djangorestframework
-pyyaml
-requests
-django-cors-headers
-dj-database-url
-psycopg2.binary
-sqlparse==0.4.3
-python-decouple
+asgiref==3.7.2
+certifi==2024.2.2
+charset-normalizer==3.3.2
+dj-database-url==2.1.0
+Django==4.0.10
+django-cors-headers==4.3.1
+djangorestframework==3.14.0
+idna==3.6
+psycopg2==2.9.9
+psycopg2-binary==2.9.9
+python-decouple==3.8
+pytz==2024.1
+PyYAML==6.0.1
+requests==2.31.0
+sqlparse==0.4.4
+typing_extensions==4.9.0
+tzdata==2023.4
+urllib3==2.2.0
