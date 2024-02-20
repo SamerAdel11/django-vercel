@@ -3,7 +3,7 @@
     "builds":[
         {
             "src":"drf/wsge.py",
-            "use": "@vercel/vercel-python-wsgi",
+            "use": "@vercel/python",
             "config":{
                 "maxLamdaSize":"15mb",
                 "runtime":"python3.9"
@@ -25,7 +25,7 @@
         },
         {
             "src":"/(.*)",
-            "dest":"/drf/wsgi.py"
+            "dest":"drf/wsgi.py"
         }
     ]
 }
