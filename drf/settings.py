@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-8qx5t9_n=)srkloofpn_@n6x4bj(f2kf6@e0_qyax@@ptc!t@*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'drf.wsgi.application'
+WSGI_APPLICATION = 'drf.wsgi.app'
 
 
 # Database
@@ -81,14 +81,14 @@ WSGI_APPLICATION = 'drf.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE':'django.db.backends.postgresql',
-        'NAME':'tego',
-        'USER':'postgres',
-        'PASSWORD':'1234'
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tego',
+        'USER': 'postgres',
+        'PASSWORD': '1234'
     }
 }
 
-DATABASES['default']=dj_database_url.config()
+DATABASES['default'] = dj_database_url.config()
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -124,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT =BASE_DIR/"staticfiles_build"/"static"
+STATIC_ROOT = BASE_DIR/"staticfiles_build"/"static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

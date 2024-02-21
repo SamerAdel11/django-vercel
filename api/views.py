@@ -23,6 +23,9 @@ def api(request,*args,**kwargs):
         # elif request.method=="GET":
 
 
+def hello(request):
+    return HttpResponse("Hello world")
+
     # print(request.GET) # url query parameters
     # body=request.body # string of json data
     # data={}
