@@ -7,12 +7,23 @@
             "config":{
                 "maxLamdaSize":"15mb"
             }
+        },
+        {
+            "src":"build.sh",
+            "use":"@vercel/stati8c-build",
+            "config":{
+                "distDir":"staticfiles_build"
+            }
         }
     ],
     "routes":[
         {
+            "src":"/static/(.*)",
+            "dest":"/static/$1"
+        },
+        {
             "src":"/(.*)",
             "dest":"drf/wsgi.py"
-        }
+        }  
     ]
 }

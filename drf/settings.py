@@ -82,9 +82,11 @@ WSGI_APPLICATION = 'drf.wsgi.app'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tego',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '1234'
+        'PASSWORD': '4bfED14-gffbCB4aD*4b532-FgB662dG',
+        'HOST': "viaduct.proxy.rlwy.net",
+        "PORT": "44159",
     }
 }
 # Password validation
