@@ -24,7 +24,7 @@ def api(request,*args,**kwargs):
 
 
 def hello(request):
-    return HttpResponse("Hello world")
+    return HttpResponse("Hello world mother father")
 
     # print(request.GET) # url query parameters
     # body=request.body # string of json data
