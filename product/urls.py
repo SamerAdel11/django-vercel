@@ -2,10 +2,11 @@ from django.urls import path, include
 from .models import Product
 from . import views
 urlpatterns = [
-    path('<int:pk>/', views.ProductMixinView.as_view(),
+    path('product/<int:pk>/', views.ProductMixinView.as_view(),
          name='product_description'),
-    path('', views.ProductMixinView.as_view(), name="product_list"),
-    path('<int:pk>/update/', views.ProductMixinView.as_view()),
-    path('<int:pk>/delete/', views.ProductMixinView.as_view(),),
+    path('product/', views.ProductMixinView.as_view(), name="product_list"),
+    path('product/<int:pk>/update/', views.ProductMixinView.as_view()),
+    path('product/<int:pk>/delete/', views.ProductMixinView.as_view(),),
+    path('',views.index)
 
 ]

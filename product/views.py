@@ -34,6 +34,8 @@ class ProductMixinView(mixins.DestroyModelMixin,
         return self.destroy(request, *args, **kwargs)
 
 
+def index(request):
+    return render(request,'product/index.html')
 # class ProductDetailAPIView(generics.RetrieveAPIView):
 #     queryset = Product.objects.all()
 #     serializer_class = ProductSerializer

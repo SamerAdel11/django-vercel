@@ -20,8 +20,8 @@ from .routers import ProductViewSet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('api.urls')),
-    path('api/product/',include('product.urls')),
+    path('',include('product.urls')),
+    path('api/',include('product.urls')),
     path('api/v2/',include('drf.routers')),
 
 ]
